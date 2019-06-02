@@ -23,8 +23,11 @@ sudo apt-get install imagemagick
 2. Place your images in the input folder directory (in/ by default). Your images should be numbered in the order that they should appear in the gif. Noise characters are allowed, the first does not need to start at 0, and the file names can skip numbers in between, as long as the images all have the same extension and each contain a number in their name that puts them in sequential order. For example:
 
 1.png                     --> 00001.png
+
 foo2.png                  --> 00002.png
+
 itcanbe10inthemiddle.png  --> 00010.png
+
 11.png                    --> 00011.png
 
 
