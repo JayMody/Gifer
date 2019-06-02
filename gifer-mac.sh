@@ -1,12 +1,18 @@
 #!/bin/bash
 
 # Request input params
-read -e -p "Enter 'in' directory: " -i "in/" infolder
-read -e -p "Enter 'out' directory: " -i "out/" outfolder
-read -e -p "Enter image extension: " -i ".png" imgext
-read -e -p "Enter output file name: " -i "output.gif" outputfile
-read -e -p "Enter delay (in ms): " -i "4" delay
-read -e -p "Enter resize (in %): " -i "100" resize
+read -p "Enter 'in directory [default: in/]: " infolder
+infolder=${infolder:-"in/"}
+read -p "Enter 'out' directory [default out/]: " outfolder
+outfolder=${outfolder:-"out/"}
+read -p "Enter image extension [default: .png]: " imgext
+imgext=${imgext:-".png"}
+read -p "Enter output file name [default: output.gif]: " outputfile
+outputfile=${outputfile:-"output.gif"}
+read -p "Enter delay (in ms) [default: 4]: " delay
+delay=${delay:-"4"}
+read -p "Enter resize (in %) [default: 100]: " resize
+resize=${resize:-"100"}
 
 
 # Reformat file names
