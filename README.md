@@ -22,7 +22,10 @@ sudo apt-get install imagemagick
 1. Download/Clone the repo
 2. Place your images in the input folder directory (in/ by default). Your images should be numbered in the order that they should appear in the gif. Noise characters are allowed, the first does not need to start at 0, and the file names can skip numbers in between, as long as the images all have the same extension and each contain a number in their name that puts them in sequential order. For example:
 
-
+1.png                     --> 00001.png
+foo2.png                  --> 00002.png
+itcanbe10inthemiddle.png  --> 00010.png
+11.png                    --> 00011.png
 
 
 **On macOS**
@@ -55,3 +58,6 @@ outputfile | output.gif | The name of the output file
 delay | 4 | The delay in ms between when each image is shown (default value of 4ms means the gif is displaying at 25fps)
 resize | 100 | The percentage of the original image sizes to the gif. Default value of 100 keeps the gif size the same as the images.
 
+
+### Example
+![circle.gif](/out/output.gif)
