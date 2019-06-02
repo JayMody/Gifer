@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Request input params
-read -p "Enter 'in directory [default: in/]: " infolder
+read -p "Enter 'in' directory [default: in/]: " infolder
 infolder=${infolder:-"in/"}
 read -p "Enter 'out' directory [default out/]: " outfolder
 outfolder=${outfolder:-"out/"}
